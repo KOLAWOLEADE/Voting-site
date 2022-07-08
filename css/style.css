@@ -12,3 +12,6 @@ h3{
     text-align: center;
 }
 
+#identity{
+    display: none;
+}
