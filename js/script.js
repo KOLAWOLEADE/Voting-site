@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $("#Reg").submit(function(event) {
+
         const PassportInput = $("#Passport").val();
         const NameInput = $("#Name").val();
         const AddressInput = $("#Address").val();
@@ -22,14 +23,19 @@ $(document).ready(function(){
       event.preventDefault();
 
 
-      let identity = ["PassportInput", "NameInput", "AddressInput","DateInput", "StatuaInput", "StateInput"]
+      let identity = ["PassportInput", "NameInput", "AddressInput","AgeInput", "StatuaInput", "StateInput"]
 
       alert(identity)
       console.log(identity)
 
 
-      let Age =18
+      if (Age => 18){
+        window.location.href="vote.html"
+      }
+      
 
-    //   if (Age === 18)
+      else{window.location.href="electoral-terms.html"}
+
+      
     });
 })
